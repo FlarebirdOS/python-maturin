@@ -1,6 +1,6 @@
 pkgname=python-maturin
-pkgver=1.9.4
-pkgrel=1
+pkgver=1.9.6
+pkgrel=2
 pkgdesc="Build and publish crates with pyo3, rust-cpython and cffi bindings"
 arch=('x86_64')
 url="https://github.com/PyO3/maturin"
@@ -23,7 +23,7 @@ makedepends=(
 )
 options=('!lto')
 source=(https://github.com/PyO3/maturin/archive/v${pkgver}/${pkgname#*-}-${pkgver}.tar.gz)
-sha256sums=(c052ec18498b6dafc727696610a4df49afac54fee29f8020857e301ce2c5f5e0)
+sha256sums=(c8aef8af6cd3d5b3331191b21191ec92d7b4ee0633e0799351a01af1c5ea2a6c)
 
 prepare() {
     cd ${pkgname#*-}-${pkgver}
